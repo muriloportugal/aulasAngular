@@ -1,4 +1,3 @@
-{{product | json}}
 <mat-card>
     <mat-card-title>Novo Produto</mat-card-title>
     <form>
@@ -9,7 +8,7 @@
             <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price">
         </mat-form-field>
     </form>
-    <button mat-raised-button  color="primary">
+    <button mat-raised-button (click)="createProduct()"  color="primary">
         Salvar
     </button>
     
@@ -18,4 +17,3 @@
     </button>
 </mat-card>
 <br>
-<Form></Form>
